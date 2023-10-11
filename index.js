@@ -34,6 +34,15 @@ app.get('/', (req, res) => {
 
 const port = process.env.PORT || 8080;
 
+const cors = require('cors');
+
+const allowedOrigins = ['http://127.0.0.1:5500']; 
+const corsOption = {
+    origin: allowedOrigins,
+};
+
+app.use(cors(corsOption));
+
 app.listen(port, (req, res) => {
     console.log('rodando')
 })
