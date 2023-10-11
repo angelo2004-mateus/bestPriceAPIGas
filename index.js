@@ -5,6 +5,10 @@ app.get('/', (req, res) => {
     res.json(
         [
             {
+                "teste" : 123
+            },
+
+            {
                 "nome" : "Posto Aldo",
                 "rua" : "Rodovia dos Imigrantes, Km 05",
                 "bairro" : "Distrito Industrial",
